@@ -1,169 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Profile</title>
-        <link rel="icon" type="image/png" href="/images/favicon.png">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style1.css">
-        <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-        <!-- google fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-        <!-- fontawesome -->
-        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon_google-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Actualités</title>
+</head>
+
+<body>
+
+    <head>
+        <nav class="nav_container">
+            <div class="logo">
+                <img src="images/logo_google.svg" alt="Logo">
+                <span>Actualités</span>
+            </div>
+            <div class="help_center">
+                <div class="search_panel">
+                    <div class="icon_search">
+                        <span class="material-symbols-outlined search_icon">
+                            search
+                        </span>
+                    </div>
+                    <input type="text" placeholder="Rechercher des sujets">
+                    <div class="arrow_icon">
+                        <span class="material-symbols-outlined arrow_drop_down">
+                            arrow_drop_down
+                        </span>
+                    </div>
+                </div>
+                <div class="help">
+                    <span class="material-symbols-outlined">
+                        help
+                    </span>
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                </div>
+            </div>
+            <div class="connexion">
+                <a href="/profile.html"><img src="images/photo de compte.png" alt="image"></a>
+                <svg class="gb_h" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+                
+                <!-- <div class="icon_search">
+                    <span class="material-symbols-outlined search_icon">
+                        search
+                    </span>
+                </div> -->
+                <div class="search">
+                    <input type="checkbox" id="search_btn">
+                    <label for="search_btn">
+                        <div class="icon_search">
+                            <span class="material-symbols-outlined search_icon">
+                                search
+                            </span>
+                        </div>
+                    </label>
+                   
+                    <div class="search_pannel">
+                        <input type="text" placeholder="Rechercher des sujets">
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+        <nav class="links">
+            <ul>
+                <li><a class="active" href="/home.html">acceuil</a></li>
+                <li><a href="#">pour vous</a></li>
+                <li><a href="#">suivis</a></li>
+                <span class="line">|</span>
+                <li><a href="#">france</a></li>
+                <li><a href="#">international</a></li>
+                <li><a href="#">actualités locales</a></li>
+                <li><a href="#">économie</a></li>
+                <li><a href="#">sciences et technologies</a></li>
+                <li><a href="#">divertissement</a></li>
+                <li><a href="#">sports</a></li>
+                <li><a href="#">santé</a></li>
+            </ul>
+        </nav>
+
+    </head>
     
-  </head>
-  
-  <body>
-
-    <nav class="merge_nav">
-      <div style="max-width: 1440px;margin: auto;;display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: 100%;
-      background-color: transparent;">
-          <div class="head">
-              <div class="link">
-                  <div class="logo">
-                      <a href="/home.html"><img src="images/RTBF.svg" class="RTBF" id="logo-img"></a>
-                  </div>
-
-                  <nav class="navbar">
-                      <ul>
-                          <li><a href="#">Video</a></li>
-                          <li><a href="#">Audio</a></li>
-                          <li><a href="#">mon choix</a></li>
-                          <li><a href="#">chaines</a></li>
-                      </ul>
-                  </nav>
-              </div>
-              <div class="one">
-                  <input type="checkbox" id="checkbtn">
-                  <label for="checkbtn">
-                      <!-- <iconify-icon style="opacity: 0;" class="hamburger" icon="pajamas:hamburger">menu</iconify-icon> -->
-                      <i style="opacity: 0;" class="fas fa-bars hamburger"><span>menu</span></i>
-                      <iconify-icon id="checkbtn2" class="quitter" icon="radix-icons:cross-1"></iconify-icon>
-                  </label>
-
-                  <nav class="sidebar">
-                      <ul>
-                          <li class="sub_sidebar">
-                              <div style="padding: 35px 0;"></div>
-                              <a href="#">Fil actu</a>
-                              <a href="#">Video</a>
-                              <a href="#">Audio</a>
-                              <a href="#">mon choix</a>
-                              <a href="#">chaines</a>
-                          </li>
-                      </ul>
-                      <div class="empty"></div>
-                  </nav>
-              </div>
-              <div class="social">
-                  <img src="images/sun.svg" alt="sun">
-                  <img src="images/search.svg" alt="search">
-                  <a href="/profile.html"><img class="profile" src="images/user.svg" alt="user"></a>
-              </div>
-          </div>
-      </div>
-      <div class="bottom_head">
-          <div style="margin: auto;display: flex;align-items: center;">
-
-
-              <div class="two">
-                  <input type="checkbox" id="checkbtn">
-                  <label for="checkbtn">
-                      <i style="margin-right: 10px;" class="fas fa-bars hamburger"><span>menu</span></i>
-                      <iconify-icon id="checkbtn2" class="quitter" icon="radix-icons:cross-1"></iconify-icon>
-                  </label>
-
-                  <nav class="sidebar">
-                      <ul>
-                          <li class="sub_sidebar">
-                              <div style="padding: 35px 0;"></div>
-                              <a href="#">Fil actu</a>
-                              <a href="#">Video</a>
-                              <a href="#">Audio</a>
-                              <a href="#">mon choix</a>
-                              <a href="#">chaines</a>
-                          </li>
-                      </ul>
-                      <div class="empty"></div>
-                  </nav>
-              </div>
-              <nav class="navbar2">
-                  <ul class="navbar-items">
-                      <li><a href="/home.html">acceuil</a></li>
-                      <li><a href="#">filactu</a></li>
-                      <li>
-                          <input type="checkbox" id="checkbtn3" checked>
-                          <label for="checkbtn3">
-                              <span class="hamburger2">Info</span>
-                          </label>
-
-                          <nav class="sidebar2">
-                              <ul class="navbar-items2">
-                                  <span style="align-self: center;margin-left: auto;text-transform: uppercase;font-weight: 600;padding-right: 1.25rem;font-size: 24px;">info
-                                  <span>|</span> </span>
-                                  <div class="sub_sidebar2">
-                                      <a href="#">regions</a>
-                                      <a href="#">belgique</a>
-                                      <a href="#">europe</a>
-                                      <a href="#">monde</a>
-                                      <a href="#">economie</a>
-                                      <a href="#">politique</a>
-                                      <a href="#">justice</a>
-                                      <a href="#">faky</a>
-                                      <a href="#">qustions-réponses</a>
-                                      <a href="#">chronique</a>
-                                      <a href="#">opinions</a>
-                                      <a href="#">météo</a>
-                                      <a href="#">trafic</a>
-                                      
-                                      
-                                   </div>
-                              </ul>
-                          </nav>
-                      </li>
-                      <li><a href="#">sport</a></li>
-                      <li><a href="#">actualités locales</a></li>
-                      <li><a href="#">culture et musique</a></li>
-                      <li><a href="#">environnement et nature</a></li>
-                      <li><a href="#">santé et bien-etre</a></li>
-                      <li><a href="#">sciences et technolgies</a></li>
-                      <li><a href="#">santé et bien-etre</a></li>
-                      <li><a href="#">vie pratique</a></li>
-                      <li><a href="#">tous les sujets</a></li>
-                      </ul>
-  </nav>
-
-  </div>
-  </div>
-
-    </nav>
-    
-    <div class="body">
+    <div class="body-1">
 
       <header class="form-titles">
-        <h1>MON PROFILE</h1>
-        <h3>Gérer mes données personnelles</h3>
+        <h1>Profile</h1>
       </header>
       
-      <section class="container">
+      <section class="container-1">
         
         <form action="#" class="form">
           
           <div class="column">
             <div class="input-box">
               <label>Email</label>
-              <input type="text" placeholder="Email" value = "real8eyes@gmail.com"  />
+              <input type="text" placeholder="Entrez votre mot de passe"  />
             </div>
             <div class="input-box">
               <label>Mot de Passe</label>
-              <input type="password" placeholder="********"  value = "ghilesyalaoui" required />
+              <input type="password" placeholder="Entrez votre mot de passe"   required />
             </div>
             <div class="input-box">
               <button>Modifier</button>
@@ -174,36 +119,36 @@
           <div class="column">
             <div class="input-box">
               <label>Prénom</label>
-              <input type="text" placeholder="Prénom" value = "Ghiles"  />
+              <input type="text" placeholder="Entrez votre Prénom"  />
             </div>
             <div class="input-box">
               <label>Nom</label>
-              <input type="text" placeholder="Nom" value = "Yalaoui"  />
+              <input type="text" placeholder="Entrez votre Nom"  />
             </div>
           </div>
          
           <div class="column">
             <div class="input-box">
               <label>Adresse</label>
-              <input type="text" placeholder="Adresse" value = "Boulevard du Triomphe 151"  />
+              <input type="text" placeholder="Entrez votre Adresse"  />
             </div>
             <div class="input-box">
               <label>Code Postal</label>
-              <input type="number" placeholder="Code Postal"  value ="1050"/>
+              <input type="number" placeholder="Entrez votre Code Postal"/>
             </div>
           </div>
           
           <div class="column">
             <div class="input-box">
               <label>Ville</label>
-              <input type="text" placeholder="Ville" value ="Bruxelles" />
+              <input type="text" placeholder="Entrez votre Ville"/>
             </div>
             <div class="input-box">
               <label>Pays</label>
               <div class="select-box">
                 <select>
                   <option selected>Belgique</option>
-                  <option>Algérie</option>
+                  <option>Maroc</option>
                 </select>
               </div>
             </div>
@@ -217,18 +162,18 @@
                 
                 <div class="sub-date">
                   <label>Jour</label>
-                  <input type="number" required/>
+                  <input type="number" placeholder="JJ" required/>
                 </div>
                 
                 <div class="sub-date">
                   <label>Mois</label>
-                  <input type="number" required />
+                  <input type="number" placeholder="MM" required />
 
                 </div>
                 
                 <div class="sub-date">
                   <label>Année</label>
-                  <input type="number" required/>
+                  <input type="number" placeholder="AAAA" required/>
                 </div>
               
               </div>
@@ -236,7 +181,7 @@
 
             <div class="input-box">
               <label>Numéro de téléphone</label>  
-              <input type="text" placeholder="Numéro de téléphone" value="+32467654313"/>
+              <input type="text" placeholder="Entrez votre Numéro de téléphone" />
             </div>
           
           </div>
@@ -266,58 +211,36 @@
         <button class="supp">Supprimer mon compte</button>
       </div>
     </div>
-    
-    <hr>
-    
-    <footer class="footer" style="max-width: 1440px; margin: auto;">
-      <div class="top_footer" style="max-width: 1440px;margin: auto;">
-          <div class="channels">
-              <img src="images/RTBF.svg" class="RTBF" style="width:86px;height:30px;" alt="">
-              <img src="images/Auvio-fd-noir.svg" style="width:86px;height:30px;" alt="">
-          </div>
-          <div class="appdownload">
-              <img src="images/disponible-google-play.svg" style="width:133px;height:32px;" alt="">
-              <img src="images/disponible-app-store.svg" style="width:133px;height:32px;" alt="">
-          </div>
-          <div class="social_media">
-              <span>suivez-nous</span>
-              <div class="social_media_icon">
-                  <img src="images/facebook.svg" class="RTBF" style="width:24px; height: 24px;" alt="">
-                  <img src="images/linkedin.svg" class="RTBF" style="width:24px; height: 24px;" alt="">
-                  <img src="images/twitter.svg" class="RTBF" style="width:24px; height: 24px;" alt="">
-              </div>
+  
+    <footer class="footer" style="background-color:#F6F8FC ;">
 
-          </div>
-      </div>
-
-
-      <div class="box-container">
+      <div class="box-container"
+          style="max-width: 1110px; margin: auto; padding: 16px; background-color: #fff;border-radius: 18px;">
 
           <div class="box">
-              <h3>thématiques</h3>
-              <a href="#">info</a>
+              <h3>thémes</h3>
+              <a href="#">my europe</a>
               <a href="#">sport</a>
               <a href="#">actualités locales</a>
               <a href="#">culture et musique</a>
               <a href="#">environnement et nature</a>
-              <a href="#">santé et bien-etre</a>
+              <a href="#">monde</a>
               <a href="#">sciences et technologies </a>
               <a href="#">vie pratique</a>
           </div>
           <div class="box">
               <h3>services</h3>
-              <a href="#">actu en continu</a>
-              <a href="#">grille des programmes</a>
+              <a href="#">live</a>
               <a href="#">score centre</a>
               <a href="#">météo</a>
-              <a href="#">trafic</a>
+              <a href="#">Le JT</a>
               <a href="#">titres diffusés</a>
               <a href="#">concours</a>
               <a href="#">archives (sitemap)</a>
               <a href="#">code promo</a>
           </div>
           <div class="box">
-              <h3>l'Actu décryptée</h3>
+              <h3>plus</h3>
               <a href="#">Matin Premiére</a>
               <a href="#">déclic</a>
               <a href="#">QR</a>
@@ -327,7 +250,7 @@
               <a href="#">faky (Fact-Checking)</a>
           </div>
           <div class="box">
-              <h3>radios</h3>
+              <h3>programme radios</h3>
               <a href="#">classic 21</a>
               <a href="#">la Premiére</a>
               <a href="#">vivacité</a>
@@ -336,25 +259,8 @@
               <a href="#">tarmac</a>
               <a href="#">viva+</a>
           </div>
-          <div class="box">
-              <h3>émissions</h3>
-              <a href="#">les grand cactus</a>
-              <a href="#">on n'est pas des pigeons</a>
-              <a href="#">the voice belgique</a>
-              <a href="#">jardins et loisirs</a>
-              <a href="#">le grande forme</a>
-              <a href="#">IXPé</a>
-              <a href="#">viva for life</a>
-          </div>
-          <div class="box">
-              <h3>nous contacter</h3>
-              <a href="#">contacter la RTBF</a>
-              <a href="#">recevoir la RTBF</a>
-              <a href="#">travailler à la RTBF</a>
-              <a href="#">notre entreprise</a>
-              <a href="#">presse</a>
-              <a href="#">éducation aux médias</a>
-          </div>
+          
+
 
 
 
@@ -362,7 +268,5 @@
 
     </footer>
     
-    <hr>
-  
   </body>
 </html>
