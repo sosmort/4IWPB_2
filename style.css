@@ -650,7 +650,7 @@ main {
     display: none;
 }
 
-/* responsive home */
+/* responsive index */
 @media (max-width:1098px) {
     .links ul {
         max-width: 95%;
